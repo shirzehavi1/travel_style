@@ -61,10 +61,7 @@
       background-color: #005f99;
     }
 
-    iframe {
-      border: none;
-      width: 100%;
-      height: 600px;
+    .tableauPlaceholder {
       margin-top: 2rem;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -80,22 +77,60 @@
   <div class="container">
     <h2>קצת על הפרויקט</h2>
     <p>
-      מדובר בפרויקט שאפתני שנעשה במסגרת קורס הדאטה הראשון שלי, במטרה ללמוד איך מספרים סיפור באמצעות נתונים. הכלי המרכזי בו השתמשתי הוא <strong>Tableau</strong>, פלטפורמה עוצמתית לניתוח והצגת נתונים בצורה ויזואלית.
+      זהו הפרויקט הראשון שלי בתחום ניתוח נתונים עם Tableau. מטרתו להמחיש איך נתונים יכולים להפוך לסיפור חזותי שמעביר מסר ברור. הכלי בו השתמשתי הוא Tableau Public, המאפשר שיתוף ויזואליזציות אונליין.
     </p>
 
-    <h2>מה תראו כאן?</h2>
+    <h2>מה תמצאו בדשבורד?</h2>
     <p>
-      הוויזואליזציה מציגה ניתוח של מדדים חברתיים וכלכליים במדינות שונות בעולם. מטרת הדשבורד היא לאפשר זיהוי מגמות, איתור בעיות והבנה עמוקה יותר של הנתונים – בצורה נגישה וברורה.
+      הדשבורד מציג מידע דמיוני אודות מדדים חברתיים בעולם. הנתונים מאפשרים זיהוי מגמות, הבנה מעמיקה של השפעת גורמים כלכליים, ויצירת תובנות חדשות על בסיס תצוגה חזותית פשוטה וברורה.
     </p>
 
     <div class="buttons">
-      <button onclick="alert('הפרויקט עדיין בפיתוח – הישארו מעודכנים!')">פרטים נוספים</button>
-      <button onclick="window.open('https://public.tableau.com/shared/SD76GNB4R?:display_count=n&:origin=viz_share_link', '_blank')">לצפייה במסך מלא</button>
+      <button onclick="alert('הפרויקט עדיין בפיתוח – המשיכו לעקוב!')">עוד מידע</button>
+      <button onclick="window.open('https://public.tableau.com/shared/9FX8T8NB7', '_blank')">צפייה במסך מלא</button>
     </div>
 
     <h2>הדשבורד המוטמע</h2>
-    <iframe src="https://public.tableau.com/shared/SD76GNB4R?:display_count=n&:origin=viz_share_link"></iframe>
+    <div class='tableauPlaceholder' id='viz1744288116497' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/9F/9FX8T8NB7/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared&#47;9FX8T8NB7' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/9F/9FX8T8NB7/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1744288116497');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1127px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
   </div>
 
 </body>
 </html>
+
